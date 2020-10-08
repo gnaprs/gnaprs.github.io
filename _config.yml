@@ -1,7 +1,7 @@
 # Site
 title:              Marion Pang
-bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+bio:                'Aspiring Biomedical Engineer, wanting to make some real cool stuff.'
+description:        "Marion's personal website in the making."
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png' 
@@ -44,7 +44,7 @@ github-url:         gnaprs
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:          username
 #xing:              username
-instagram:          gnaprs
+#instagram:          gnaprs
 #lastfm:            username
 #tumblr:            username
 #medium:            '@username'
