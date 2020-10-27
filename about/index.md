@@ -6,19 +6,18 @@ date: 2020-10-21
 comments: false
 ---
     
-<center><a href="http://gnaprs.github.io"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
+<center><a href="http://gnaprs.github.io"><b>Marion Pang</b></a> is a biomedical engineer, interested in pursuing a PhD in the field of Computational Systems Biology and Medical Devices.</center>
 
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
+## Education
+Johns Hopkins University $\cdot$ Aug 2017-May 2020 
+: Major in biomdeical Engineering (Focus in Instrumentation and Imaging), Minor in Applied Mathematics and Statistics
+GPA: 3.95/4.0 (Graduated with General and Departmental Honors)
+
+## Skills
+* CAD & Simulations (PTC Creo 5.0-7.0)
+* <b>Python</b>, MATLAB, Mathematica 12.0
+* C, C++, Java
+* <b>LaTeX</b>, Basic HTML, CSS
 
 ## Preview
 
@@ -28,6 +27,6 @@ comments: false
 {% endcapture %}
 {% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
 
-See a [live version of Moon](http://gnaprs.github.io/Moon) hosted on GitHub.
+For more information, see [my CV]({{site.url}}/_site/assets/cv/mydoc.pdf). (Updated 27 Oct 2020)
       
-[Install Moon](https://github.com/TaylanTatli/Moon){: .btn}
+[Learn more about her research](https://github.com/TaylanTatli/Moon){: .btn}
