@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "Making a guitar pedal"
-date:   2019-10-10
+date:   2019-04-10
 excerpt: "Making a electric guitar pedal from scratch."
 tag:
 - music
 - guitar
 - electronics
+- engineering
 comments: true
 ---
 
