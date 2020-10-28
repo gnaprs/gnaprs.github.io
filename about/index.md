@@ -34,14 +34,16 @@ NUS High School \\(\cdot\\) GPA: 4.9/5.0 \\(\cdot\\) Jan 2011-Dec 2016
 * Electronics and engineering
 * Gaming
 
-## Preview
+<center><a href="http://gnaprs.github.io"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
 
-{% capture images %}
-    https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png
-    https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
-
-For more detail, see [my CV]({{site.url}}/_site/assets/cv/mydoc.pdf). (Updated 27 Oct 2020)
-      
-[Learn more about her research](https://github.com/TaylanTatli/Moon){: .btn}
+## Features
+* Minimal, you can focus on your content
+* Responsive
+* Disqus integration
+* Syntax highlighting
+* Optional post image
+* Social icons
+* Page for sharing projects
+* Optional background image
+* Simple navigation menu
+* MathJax support

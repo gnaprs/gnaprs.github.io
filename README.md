@@ -9,7 +9,6 @@
 * Responsive
 
 ## To do list
-- [ ] Change icon picture
-- [ ] Figure out how to deal with the links to CV
+- [ ] Add CV
 - [ ] Add biomaterials notes
-- [ ] Finish up post on guitar pedals
+- [ ] Edit out blog posts
