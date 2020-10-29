@@ -33,17 +33,3 @@ NUS High School \\(\cdot\\) GPA: 4.9/5.0 \\(\cdot\\) Jan 2011-Dec 2016
 * Rubik's Cube
 * Electronics and engineering
 * Gaming
-
-<center><a href="http://gnaprs.github.io"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
-
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
