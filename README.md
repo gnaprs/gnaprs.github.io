@@ -1,8 +1,8 @@
-# Moon Jekyll Theme
+# Marion's personal website
   
 ## `Website in the making.`
     
-**[Moon](https://taylantatli.github.io/Moon)** is a minimal, one column jekyll theme.
+[gnaprs.github.io](https://gnaprs.github.io) is based on **[Moon](https://taylantatli.github.io/Moon)**, a minimal, one column jekyll theme.
 
 ## Features
 * Minimal, you can focus on your content
