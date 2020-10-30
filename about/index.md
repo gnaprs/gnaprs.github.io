@@ -6,9 +6,9 @@ date: 2020-10-21
 comments: false
 ---
 
-<center>INSERT PICTURE HERE PLS<figure>
-	<a href="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_b.jpg"><img src="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg"></a>
-	<figcaption><a href="http://www.flickr.com/photos/80901381@N04/7758832526/" title="Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr">Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</a>.</figcaption>
+<center><figure>
+	<a href="/images/image-filename-1-large.jpg"><img src="/images/image-filename-1.jpg"></a>
+	<figcaption>Marion and her dog Latte.</figcaption>
 </figure></center>
 
 <center><a href="http://gnaprs.github.io"><b>Marion Pang</b></a> is a biomedical engineer, interested in pursuing a PhD in the field of Computational Systems Biology and Medical Devices.</center>
