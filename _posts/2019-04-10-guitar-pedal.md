@@ -3,6 +3,7 @@ layout: post
 title:  "Making a guitar pedal"
 date:   2019-04-10
 excerpt: "Making a electric guitar pedal from scratch."
+project: true
 tag:
 - music
 - guitar
