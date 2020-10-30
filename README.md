@@ -12,3 +12,4 @@
 - [ ] Add CV
 - [ ] Add biomaterials notes
 - [ ] Edit out blog posts
+- [ ] make circular marion spin when you mouse over picture
