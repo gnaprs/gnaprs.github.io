@@ -7,7 +7,7 @@ comments: false
 ---
 
 <center><figure>
-	<a href="/images/image-filename-1-large.jpg"><img src="/images/image-filename-1.jpg"></a>
+	<a href="/assets/img/marion.JPG"><img src="/assets/img/marion.JPG"></a>
 	<figcaption>Marion and her dog Latte.</figcaption>
 </figure></center>
 
