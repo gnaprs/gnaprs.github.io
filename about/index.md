@@ -7,7 +7,7 @@ comments: false
 ---
 
 <center><figure>
-	<a href="/assets/img/marion.JPG"><img src="/assets/img/marion.JPG"></a>
+	<a href="https://gnaprs.github.io/assets/img/marion.JPG"><img src="https://gnaprs.github.io/assets/img/marion.JPG"></a>
 	<figcaption>Marion and her dog Latte.</figcaption>
 </figure></center>
 
