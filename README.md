@@ -1,6 +1,6 @@
 # Marion's personal website
   
-## `Website in the making.`
+Just a quick `Website in the making.`
     
 [gnaprs.github.io](https://gnaprs.github.io) is based on **[Moon](https://taylantatli.github.io/Moon)**, a minimal, one column jekyll theme.
 
