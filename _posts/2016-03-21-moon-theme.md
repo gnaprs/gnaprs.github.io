@@ -138,7 +138,7 @@ You can set feature image per post. Just add `feature: some link` to your post's
 ```
 feature: /assets/img/some-image.png
 or
-feaure: http://example.com/some-image.png
+feature: http://example.com/some-image.png
 ```    
  This also will be used for twitter card:
 
