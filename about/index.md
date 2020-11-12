@@ -24,7 +24,7 @@ NUS High School \\(\cdot\\) GPA: 4.9/5.0 \\(\cdot\\) Jan 2011-Dec 2016
 * CAD & Simulations (PTC Creo 5.0-7.0)
 * <b>Python</b>, MATLAB, Mathematica 12.0
 * C, C++, Java
-* <b>LaTeX</b>, Basic HTML, CSS
+* LaTeX, Basic HTML, CSS
 * Adobe Illustrator/Photoshop
 * Adobe AE/Sony Vegas Pro
 
