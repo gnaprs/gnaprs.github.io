@@ -18,6 +18,7 @@ So, here goes a record of my attempts at solving our little daily puzzles!
 
 # Day 1
 <a href="https://adventofcode.com/2020/day/1"><b>Report Repair</b></a>
+
 We begin with a little story about Santa taking a break before Christmas (gotta clear those annual leave days with a little downtime!), and it appears that before he can leave the Elves need some accounting help. The problem is simple enough: they need you to <b>find the two entries that sum to `2020`</b> and then multiply those two numbers together.
 
 ## Part 1
@@ -66,7 +67,7 @@ Here, we find ourselves in a little bit of a rut. (Well, technically not really,
 
 It turns out that our little brute force method from before wouldn't be quite as efficient in finding a triplet. Blindly running through every single combination for a triplet with **three** nested for loops is a \\(O(n^3)\\) solution - still alright for our little 200 element sized input, but not great if the Elves suddenly unearthed 5 more piles of accounting tables.
 
-So, a little bit of thinking later (and some googling, not gonna lie), I chanced upon the <a href="https://www.geeksforgeeks.org/two-pointers-technique/">Two Pointer Technique</a>. The concept is simple: Given a sorted array `A` (sorted in ascending order), having `N` integers, find if there exists any pair of elements (`A[i]`, `A[j]`) such that their sum is equal to `X`. This is a lot smarter, because by finding smart pairs (i.e. comparing the sum we're getting to what we want), we can reduce the time complexity of our solution down to \\(O(n^2)\\). Yay for optimization!
+So, a little bit of thinking later (and some googling, not gonna lie), I chanced upon the <a href="https://www.geeksforgeeks.org/two-pointers-technique/">Two Pointer Technique</a>. The concept is simple: Given a sorted array `A` (sorted in ascending order), having `N` integers, find if there exists any pair of elements (`A[i]`, `A[j]`) such that their sum is equal to `X`. This is a lot smarter, because by finding smart pairs (i.e. comparing the sum we're getting to what we want), we can reduce the time complexity of our solution down to \\(O(n^2)+O(n \log n)\approxO(n^2)\\). Yay for optimization!
 
 The algorithm is then pretty simple:
 1. First, we hold out one of the triplets, finding our desired sum of the pair.
