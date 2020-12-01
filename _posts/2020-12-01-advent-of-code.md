@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Advent of Code 2020!
-date: 2013-08-16
+date: 2020-12-01
 excerpt: "An old engineer attempts to scrub off the rust on her high school coding days."
 tag: 
 - coding
@@ -9,7 +9,8 @@ tag:
 comments: false
 ---
 
-> Advent of Code is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like. People use them as a speed contest, interview prep, company training, university coursework, practice problems, or to challenge each other.
+Advent of Code is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like. People use them as a speed contest, interview prep, company training, university coursework, practice problems, or to challenge each other.
+{: .notice}
 
 So, a friend of mine recently introduced me to the Advent of Code challenge. It seemed pretty cool, and I thought - why not? Besides, it's been quite a while since I practiced some problem solving with code! And of course, it also helps that the organizers themselves have a <a href="https://whimsical.com/advent-of-code-2020-get-unstuck-with-whimsical-7hoTGmwqttswvigWHqAgpU">whimsical</a> sense of humour. 
 
@@ -21,6 +22,7 @@ We begin with a little story about Santa taking a break before Christmas (gotta 
 
 ## Part 1
 <center>Tl;dr Find the two entries that sum to 2020; and find their product.</center>
+{: .notice}
 
 Simple enough - we can approach this using a quick and dirty brute force method: calculate the sum of every possible pair, and the moment we hit our sum, we spit out our answers.
 
@@ -58,6 +60,7 @@ And there's our answer! Ans: `1007104`
 ## Part 2
 The Elves in accounting are thankful for your help; one of them even offers you a starfish coin they had left over from a past vacation. They offer you a second one if you can find three numbers in your expense report that meet the same criteria.
 <center>Tl;dr <b>Baited by the Elves for more shinies</b>. Now we find a triplet which sum to a certain number, and find their product.</center>
+{: .notice}
 
 Here, we find ourselves in a little bit of a rut. (Well, technically not really, since we don't have any constraints on our time complexity or space complexity. But I mean, we're trying to do things *somewhat* optimized here)
 
