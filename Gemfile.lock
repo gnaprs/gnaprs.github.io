@@ -8,6 +8,7 @@ GEM
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.4.0)
+    bigdecimal (1.4.4)
     colorator (1.1.0)
     concurrent-ruby (1.1.7)
     faraday (1.0.1)
@@ -79,6 +80,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  bigdecimal (~> 1.4)
   jekyll (~> 3.2.1)
   jekyll-feed
   jekyll-gist
