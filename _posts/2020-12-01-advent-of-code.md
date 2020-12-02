@@ -59,7 +59,7 @@ print(ans1*ans2)
 And there's our answer! Ans: `1007104`
 
 ## Part 2
-The Elves in accounting are thankful for your help; one of them even offers you a starfish coin they had left over from a past vacation. They offer you a second one if you can find three numbers in your expense report that meet the same criteria.
+*The Elves in accounting are thankful for your help; one of them even offers you a starfish coin they had left over from a past vacation. They offer you a second one if you can find three numbers in your expense report that meet the same criteria.*
 <center>Tl;dr <b>Baited by the Elves for more shinies</b>. Now we find a triplet which sum to a certain number, and find their product.</center>
 {: .notice}
 
