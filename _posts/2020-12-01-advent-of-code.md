@@ -7,6 +7,7 @@ tag:
 - coding
 - fun
 comments: false
+feature: /assets/img/posts/aoc2020/aoc2020_cropped.jpeg
 ---
 
 Advent of Code is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like. People use them as a speed contest, interview prep, company training, university coursework, practice problems, or to challenge each other.
@@ -59,7 +60,7 @@ print(ans1*ans2)
 And there's our answer! Ans: `1007104`
 
 ## Part 2
-The Elves in accounting are thankful for your help; one of them even offers you a starfish coin they had left over from a past vacation. They offer you a second one if you can find three numbers in your expense report that meet the same criteria.
+*The Elves in accounting are thankful for your help; one of them even offers you a starfish coin they had left over from a past vacation. They offer you a second one if you can find three numbers in your expense report that meet the same criteria.*
 <center>Tl;dr <b>Baited by the Elves for more shinies</b>. Now we find a triplet which sum to a certain number, and find their product.</center>
 {: .notice}
 
