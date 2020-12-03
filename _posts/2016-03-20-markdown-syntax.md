@@ -120,6 +120,4 @@ feature: /assets/img/some-image.png
 or
 feature: http://example.com/some-image.png
 ```    
- This also will be used for twitter card:
 
-![Moon Twitter Card](https://cloud.githubusercontent.com/assets/754514/14509719/61c5751c-01d6-11e6-8c29-ce8ccad149bf.png)
