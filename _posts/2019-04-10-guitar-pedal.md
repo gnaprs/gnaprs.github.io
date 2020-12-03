@@ -12,7 +12,8 @@ tag:
 comments: true
 ---
 
-> Here's a quick project that a couple of friends and I worked on for our Electronics & Instrumentation class. Our focus was on the engineering of the circuitry - with a nifty little application to one of my favourite hobbies. Enjoy! <br> Credit: Afareen Jaleel, Annika Torp, Ruby Liu, Yeonwoo Lee, <b>Marion Pang<b>
+Here's a quick project that a couple of friends and I worked on for our Electronics & Instrumentation class. Our focus was on the engineering of the circuitry - with a nifty little application to one of my favourite hobbies. Enjoy! <br> Credit: Afareen Jaleel, Annika Torp, Ruby Liu, Yeonwoo Lee, <b>Marion Pang<b>
+{: .notice}
 
 # The Banshee
 The Fuzz Face is an iconic guitar pedal used by famous guitarists such as Jimi Hendrix. However, fuzz effects clip off the lower spectrum of frequencies, leading to a shallow tone. In this project, we would like to recreate the fuzzy sound produced by the pedal while maintaining the full tone of an electric guitar. To create the fuzz effect, we use a simple combination of 2 transistors, and several different resistors and capacitors. The circuit designed combines initial soft clipping with asymmetrical clipping that changes toward symmetrical clipping under drive, resulting in the classic fuzz. We combine the fuzz circuit with a low pass filter and add the signals in a non-inverting summation amplifier. As a result, we are able to achieve the fuzz effect with bass boost.
