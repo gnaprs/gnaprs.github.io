@@ -12,9 +12,11 @@ url:                https://gnaprs.github.io
 #url:                http://127.0.0.1:4000
 
 # Jekyll
-permalink:          /:title/
+#permalink:          /:title/
 markdown:           kramdown
-highlighter:        rouge
+paginate: 	        2
+paginate_path: 	    'posts/page:num/'
+#highlighter:        rouge
 kramdown:
   auto_ids:         true
   footnote_nr:      1
@@ -69,6 +71,14 @@ gems:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-paginate
+
+whitelist:
+  - jekyll-mentions
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-paginate
 
 jekyll-mentions:
     base_url: https://github.com

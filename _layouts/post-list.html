@@ -11,7 +11,7 @@ layout: compress
 </head>
 <body>
     {% include nav.html %}
-    <!-- Header -->
+       <!-- Header -->
     <header class="header" role="banner">
         <div class="wrapper animated fadeIn">
             <div class="content">
@@ -22,7 +22,7 @@ layout: compress
                     </a>
                 </div>
                 <div class="post-list">
-                    {% for post in site.posts %} 
+                    {% for post in paginator.posts %} 
                         {% if post.project == null %}
                     <ul>
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
@@ -33,6 +33,7 @@ layout: compress
                     </ul>
                         {% endif %}
                     {% endfor %}
+                    {% include paginate.html %}
                 </div>
             </div>
         </div>
@@ -40,5 +41,7 @@ layout: compress
     {% include scripts.html %}
     <script src="{{ site.url }}/assets/js/wow.min.js"></script>
     <script type="text/javascript">(new WOW).init();</script>
+</div>
+
 </body>
 </html>

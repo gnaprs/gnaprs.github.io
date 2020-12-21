@@ -4,6 +4,7 @@ title: "Ramblings of a engineer"
 date: 2018-02-28
 excerpt: "A collection of short stories."
 project: true
+hidden: true
 tag: 
 - fiction
 - poem

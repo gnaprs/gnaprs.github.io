@@ -9,7 +9,6 @@ Just a quick website in the making.
 * Responsive
 
 ## To do list
-- [ ] add CV
-- [ ] add biomaterials notes
-- [ ] edit out blog posts
+- [x] add CV
+- [x] add pagination
 - [ ] make circular marion spin when you mouse over picture

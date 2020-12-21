@@ -4,6 +4,7 @@ title:  "An application of multivariate linear regression: Song popularity and i
 date:   2019-10-07
 excerpt: "Mhmm that's a good song... But why?"
 project: true
+hidden: true
 tag:
 - music
 - coding

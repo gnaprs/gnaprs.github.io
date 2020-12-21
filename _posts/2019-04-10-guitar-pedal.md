@@ -4,6 +4,7 @@ title:  "Making a guitar pedal"
 date:   2019-04-10
 excerpt: "Guitar pedals are great. Really."
 project: true
+hidden: true
 tag:
 - music
 - guitar
