@@ -1,6 +1,6 @@
 # Marion's personal website
   
-Just a quick `Website in the making.`
+Just a quick website in the making.
     
 [gnaprs.github.io](https://gnaprs.github.io) is based on **[Moon](https://taylantatli.github.io/Moon)**, a minimal, one column jekyll theme.
 
@@ -9,7 +9,7 @@ Just a quick `Website in the making.`
 * Responsive
 
 ## To do list
-- [ ] Add CV
-- [ ] Add biomaterials notes
-- [ ] Edit out blog posts
+- [ ] add CV
+- [ ] add biomaterials notes
+- [ ] edit out blog posts
 - [ ] make circular marion spin when you mouse over picture
