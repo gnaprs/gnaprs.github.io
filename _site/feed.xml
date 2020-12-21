@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://127.0.0.1:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-12-07T17:16:42+08:00</updated><id>http://127.0.0.1:4000/</id><title type="html">Marion Pang</title><subtitle>Marion's personal website in the making.</subtitle><entry><title type="html">Advent of Code 2020 (Day 5 and 6)</title><link href="http://127.0.0.1:4000/aoc-day-5-6/" rel="alternate" type="text/html" title="Advent of Code 2020 (Day 5 and 6)" /><published>2020-12-06T00:00:00+08:00</published><updated>2020-12-06T00:00:00+08:00</updated><id>http://127.0.0.1:4000/aoc-day-5-6</id><content type="html" xml:base="http://127.0.0.1:4000/aoc-day-5-6/">&lt;h1 id=&quot;day-5&quot;&gt;Day 5&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://127.0.0.1:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2020-12-21T13:50:04+08:00</updated><id>http://127.0.0.1:4000/</id><title type="html">Marion Pang</title><subtitle>Marion's personal website in the making.</subtitle><entry><title type="html">Advent of Code 2020 (Day 5 and 6)</title><link href="http://127.0.0.1:4000/aoc-day-5-6/" rel="alternate" type="text/html" title="Advent of Code 2020 (Day 5 and 6)" /><published>2020-12-06T00:00:00+08:00</published><updated>2020-12-06T00:00:00+08:00</updated><id>http://127.0.0.1:4000/aoc-day-5-6</id><content type="html" xml:base="http://127.0.0.1:4000/aoc-day-5-6/">&lt;h1 id=&quot;day-5&quot;&gt;Day 5&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://adventofcode.com/2020/day/5&quot;&gt;&lt;b&gt;Binary Boarding&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;We’re finally in!!! Now to just lie down and sleep off the rest of the flight. Jk, it’s AoC so we have more problems to solve. Turns out our little code from before is &lt;strong&gt;too efficient&lt;/strong&gt;, and we have to solve our own problems.&lt;/p&gt;
@@ -134,134 +134,84 @@
 &lt;h1 id=&quot;day-6&quot;&gt;Day 6&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://adventofcode.com/2020/day/6&quot;&gt;&lt;b&gt;Custom Customs&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;We’re finally in!!! Now to just lie down and sleep off the rest of the flight. Jk, it’s AoC so we have more problems to solve. Turns out our little code from before is &lt;strong&gt;too efficient&lt;/strong&gt;, and we have to solve our own problems.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;As your flight approaches the regional airport where you’ll switch to a much larger plane, customs declaration forms are distributed to the passengers. However, the person sitting next to you seems to be experiencing a language barrier and asks if you can help.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;You board your plane only to discover a new problem: you dropped your boarding pass! You aren’t sure which seat is yours, and all of the flight attendants are busy with the flood of people that suddenly made it through passport control.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Ah yes some good ol custom declaration forms. Ngl, this is my favorite part of international flights! Filling in the forms is like a little puzzle where you figure out the translations from a foreign language into English (or be like me and scratch your head, asking your neighbour for some help COUGHS) and it’s like your first little glimpse of a foreign country! (Yeah can you tell that I want to travel soon? I do want to travel soon)&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Instead of zones or groups, this airline uses binary space partitioning to seat people. A seat might be specified like FBFBBFFRLR, where &lt;code class=&quot;highlighter-rouge&quot;&gt;F&lt;/code&gt; means “front”, &lt;code class=&quot;highlighter-rouge&quot;&gt;B&lt;/code&gt; means “back”, &lt;code class=&quot;highlighter-rouge&quot;&gt;L&lt;/code&gt; means “left”, and &lt;code class=&quot;highlighter-rouge&quot;&gt;R&lt;/code&gt; means “right”. The first 7 characters will either be &lt;code class=&quot;highlighter-rouge&quot;&gt;F&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;B&lt;/code&gt;; these specify exactly one of the 128 rows on the plane (numbered 0 through 127). Each letter tells you which half of a region the given seat is in. Start with the whole list of rows; the first letter indicates whether the seat is in the front (0 through 63) or the back (64 through 127). The next letter indicates which half of that region the seat is in, and so on until you’re left with exactly one row.&lt;/p&gt;
+  &lt;p&gt;The form asks a series of 26 yes-or-no questions marked a through z. All you need to do is identify the questions for which anyone in your group answers “yes”. For each of the people in their group, you write down the questions for which they answer “yes”, one per line. Each group’s answers are separated by a blank line, and within each group, each person’s answers are on a single line.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Yeah, that was a long read. But a simpler way to analyze this would be to take a hint from the title of the problem - &lt;strong&gt;binary&lt;/strong&gt; boarding. Instead of dealing with the top half and back half, we just need to understand that the sequence of 7 &lt;code class=&quot;highlighter-rouge&quot;&gt;F&lt;/code&gt;/&lt;code class=&quot;highlighter-rouge&quot;&gt;B&lt;/code&gt; characters and 3 &lt;code class=&quot;highlighter-rouge&quot;&gt;L&lt;/code&gt;/&lt;code class=&quot;highlighter-rouge&quot;&gt;R&lt;/code&gt; characters are simply binary representation of a number from 0-127 and 0-7! And as it turns out, computers are reaaally good at reading binary. (Thanks computers!)&lt;/p&gt;
-
-&lt;p&gt;So, what are binary numbers? A binary number is made up of only 0s and 1s. Counting using binary numbers is similar to decimal (that we’re so familiar with), but instead of using base 10 we’re in base 2! We add 1 to the right most digit, and everytime we “go over” 1, we add 1 to the next binary place (similar to adding to the next deimal place every time we “go over” 10 in demical base). Using such a system, we can represent decimal numbers in their binary forms.&lt;/p&gt;
-
-&lt;table rules=&quot;groups&quot;&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Decimal&lt;/th&gt;
-      &lt;th&gt;0&lt;/th&gt;
-      &lt;th&gt;1&lt;/th&gt;
-      &lt;th&gt;2&lt;/th&gt;
-      &lt;th&gt;3&lt;/th&gt;
-      &lt;th&gt;4&lt;/th&gt;
-      &lt;th&gt;5&lt;/th&gt;
-      &lt;th&gt;6&lt;/th&gt;
-      &lt;th&gt;7&lt;/th&gt;
-      &lt;th&gt;8&lt;/th&gt;
-      &lt;th&gt;9&lt;/th&gt;
-      &lt;th&gt;10&lt;/th&gt;
-      &lt;th&gt;11&lt;/th&gt;
-      &lt;th&gt;12&lt;/th&gt;
-      &lt;th&gt;13&lt;/th&gt;
-      &lt;th&gt;14&lt;/th&gt;
-      &lt;th&gt;15&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Binary&lt;/td&gt;
-      &lt;td&gt;0&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;10&lt;/td&gt;
-      &lt;td&gt;11&lt;/td&gt;
-      &lt;td&gt;100&lt;/td&gt;
-      &lt;td&gt;101&lt;/td&gt;
-      &lt;td&gt;110&lt;/td&gt;
-      &lt;td&gt;111&lt;/td&gt;
-      &lt;td&gt;1000&lt;/td&gt;
-      &lt;td&gt;1001&lt;/td&gt;
-      &lt;td&gt;1010&lt;/td&gt;
-      &lt;td&gt;1011&lt;/td&gt;
-      &lt;td&gt;1100&lt;/td&gt;
-      &lt;td&gt;1101&lt;/td&gt;
-      &lt;td&gt;1110&lt;/td&gt;
-      &lt;td&gt;1111&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;For example, we can parse an input of &lt;code class=&quot;highlighter-rouge&quot;&gt;FBFBFBFRRR&lt;/code&gt; into &lt;code class=&quot;highlighter-rouge&quot;&gt;0101010111&lt;/code&gt;. We split these up into the row number (first 7 digits, &lt;code class=&quot;highlighter-rouge&quot;&gt;0101010&lt;/code&gt;) and column number(last 3 digits, &lt;code class=&quot;highlighter-rouge&quot;&gt;111&lt;/code&gt;). In binary representation, this is a row &lt;code class=&quot;highlighter-rouge&quot;&gt;42&lt;/code&gt; and column &lt;code class=&quot;highlighter-rouge&quot;&gt;7&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Now that we have our strategy planned out, let’s head straight into it! First, we read in our input and parse the strings into their binary representation:&lt;/p&gt;
+&lt;p&gt;Alllrightyyy! That’s not too bad in terms of parsing. First, let’s read in our input according to groups:&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pd&lt;/span&gt; 
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;re&lt;/span&gt;
 
-&lt;span class=&quot;n&quot;&gt;seats_bin&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;groups&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;# import data&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;input.txt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'r'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;curGroup&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-        &lt;span class=&quot;c&quot;&gt;# recognize that the format of the string is binary in the format: row = [:7], col = [7:]&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;current_seat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;current_seat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'F'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'0'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'B'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'L'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'0'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'R'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;seats_bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current_seat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;groups&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;curGroup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;curGroup&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;c&quot;&gt;# add current person's answer to group!&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;curGroup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;part-1-1&quot;&gt;Part 1&lt;/h2&gt;
-&lt;center class=&quot;notice&quot;&gt;Tl;dr Every seat also has a unique seat ID: multiply the row by 8, then add the column; find the greatest seat ID&lt;/center&gt;
+&lt;center class=&quot;notice&quot;&gt;For each group, count the number of questions to which anyone answered &quot;yes&quot;. What is the sum of those counts?&lt;/center&gt;
 
-&lt;p&gt;Alrighty - we just pop in our code for converting from binary to decimal, and then apply the given formula to get our seat ID.&lt;/p&gt;
+&lt;p&gt;This can be done simply enough with &lt;strong&gt;sets&lt;/strong&gt; - one of the 4 built in data types in Python. This creates a collection that is &lt;em&gt;unordered&lt;/em&gt; and &lt;em&gt;unindxed&lt;/em&gt;, which is great for us in this application since we can simply count the number of &lt;em&gt;unique&lt;/em&gt; elements in each group!&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;seats_id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;count_p1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
 
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;seats_bin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;c&quot;&gt;# converting from binary to row and column no.&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;row&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;col&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:],&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# add number of unique answers to current count&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;groups&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;count_p1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
 
-    &lt;span class=&quot;c&quot;&gt;# seat ID: multiply the row by 8, then add the column&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;seats_id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;row&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Ans:'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seats_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Ans:'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count_p1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Ans: 953
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Ans: 6310
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Ans: &lt;code class=&quot;highlighter-rouge&quot;&gt;975&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Ans: &lt;code class=&quot;highlighter-rouge&quot;&gt;6310&lt;/code&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;part-2-1&quot;&gt;Part 2&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;Ding! The “fasten seat belt” signs have turned on. Time to find your seat.&lt;/em&gt;&lt;/p&gt;
-&lt;center class=&quot;notice&quot;&gt;We need to find our seat quick! We're the only missing number that's right after someone.&lt;/center&gt;
+&lt;p&gt;&lt;em&gt;As you finish the last group’s customs declaration, you notice that you misread one word in the instructions.&lt;/em&gt;&lt;/p&gt;
+&lt;center class=&quot;notice&quot;&gt;As it turns out, we don't need to identify the questions to which anyone answered &quot;yes&quot;; we need to identify the questions to which &lt;b&gt;everyone&lt;/b&gt; answered &quot;yes&quot;!.&lt;/center&gt;
 
-&lt;p&gt;Since we have the whole list of seat IDs, we simply need to find the seat number that is missing (and isn’t the first OR the last seat!).&lt;/p&gt;
+&lt;p&gt;Ooookay so this one is a little more tricky. But, we can still use sets to help us with a little bit more tweaking. First, we count the number of group members and the number of unique questions, and simply check if the number of answers matches the number of group members for each question. And voila - we’re rolling!&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# sort all seats in numerical order&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;seats_id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;count_p2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
 
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;seat_id&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;enumerate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seats_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;c&quot;&gt;# explicitly skip first seat&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;seat_id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;seats_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
-        &lt;span class=&quot;c&quot;&gt;# my seat is the empty seat behind someone elses'!&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Ans:'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;seat_id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;groups&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# count group members and number of unique questions&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;group_mem&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;qns&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;# check if number of answers matches number of group members&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;qns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;group_mem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;count_p2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Ans:'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count_p2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Ans: 615
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Ans: 3193
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Ans: &lt;code class=&quot;highlighter-rouge&quot;&gt;615&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Ans: &lt;code class=&quot;highlighter-rouge&quot;&gt;3193&lt;/code&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Thoughts after day 5: DID YOU SAY BINARY?&lt;/p&gt;
+  &lt;p&gt;Thoughts after day 6: mhmm fun with sets!&lt;/p&gt;
 &lt;/blockquote&gt;</content><category term="coding" /><category term="fun" /><summary type="html">B-B-B-BINARY!!!! and some sets!</summary></entry><entry><title type="html">Advent of Code 2020 (Day 3&amp;amp;4)</title><link href="http://127.0.0.1:4000/aoc-day-3-4/" rel="alternate" type="text/html" title="Advent of Code 2020 (Day 3&amp;4)" /><published>2020-12-04T00:00:00+08:00</published><updated>2020-12-04T00:00:00+08:00</updated><id>http://127.0.0.1:4000/aoc-day-3-4</id><content type="html" xml:base="http://127.0.0.1:4000/aoc-day-3-4/">&lt;h1 id=&quot;day-3&quot;&gt;Day 3&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://adventofcode.com/2020/day/3&quot;&gt;&lt;b&gt;Toboggan Trajectory&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -902,7 +852,7 @@ Name: valid_p2, dtype: int64
   &lt;li&gt;Day 4: &lt;a href=&quot;http://127.0.0.1:4000/aoc-day-3-4&quot;&gt;Passport Processing&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Day 5: &lt;a href=&quot;http://127.0.0.1:4000/aoc-day-5-6&quot;&gt;Binary Boarding&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Day 6: &lt;a href=&quot;http://127.0.0.1:4000/aoc-day-5-6&quot;&gt;Custom Customs&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><category term="coding" /><category term="fun" /><summary type="html">Coding exercises for Christmas!</summary></entry><entry><title type="html">Advent of Code 2020!</title><link href="http://127.0.0.1:4000/aoc-day-1/" rel="alternate" type="text/html" title="Advent of Code 2020!" /><published>2020-12-01T00:00:00+08:00</published><updated>2020-12-01T00:00:00+08:00</updated><id>http://127.0.0.1:4000/aoc-day-1</id><content type="html" xml:base="http://127.0.0.1:4000/aoc-day-1/">&lt;p class=&quot;notice&quot;&gt;Advent of Code is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like. People use them as a speed contest, interview prep, company training, university coursework, practice problems, or to challenge each other.&lt;/p&gt;
+&lt;/ol&gt;</content><category term="coding" /><category term="fun" /><summary type="html">Coding exercises for Christmas!</summary></entry><entry><title type="html">Advent of Code 2020! (Day 1)</title><link href="http://127.0.0.1:4000/aoc-day-1/" rel="alternate" type="text/html" title="Advent of Code 2020! (Day 1)" /><published>2020-12-01T00:00:00+08:00</published><updated>2020-12-01T00:00:00+08:00</updated><id>http://127.0.0.1:4000/aoc-day-1</id><content type="html" xml:base="http://127.0.0.1:4000/aoc-day-1/">&lt;p class=&quot;notice&quot;&gt;Advent of Code is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like. People use them as a speed contest, interview prep, company training, university coursework, practice problems, or to challenge each other.&lt;/p&gt;
 
 &lt;p&gt;So, a friend of mine recently introduced me to the Advent of Code challenge. It seemed pretty cool, and I thought - why not? Besides, it’s been quite a while since I practiced some problem solving with code! And of course, it also helps that the organizers themselves have a &lt;a href=&quot;https://whimsical.com/advent-of-code-2020-get-unstuck-with-whimsical-7hoTGmwqttswvigWHqAgpU&quot;&gt;whimsical&lt;/a&gt; sense of humour.&lt;/p&gt;
 
