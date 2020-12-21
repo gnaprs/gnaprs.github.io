@@ -8,8 +8,8 @@ logo:               'assets/img/marion_circle.png'
 background:         'assets/img/placeholder_big_compress.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                https://gnaprs.github.io
-#url:                http://127.0.0.1:4000
+#url:                https://gnaprs.github.io
+url:                http://127.0.0.1:4000
 
 # Jekyll
 permalink:          /:title/
