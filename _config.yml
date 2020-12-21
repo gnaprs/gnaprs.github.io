@@ -16,7 +16,7 @@ url:                https://gnaprs.github.io
 markdown:           kramdown
 paginate: 	        5
 paginate_path: 	    'posts/page:num/'
-#highlighter:        rouge
+highlighter:        rouge
 kramdown:
   auto_ids:         true
   footnote_nr:      1
