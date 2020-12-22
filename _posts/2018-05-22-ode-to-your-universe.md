@@ -7,8 +7,6 @@ tags: [fiction, poem]
 comments: false
 ---
 
-feature: some link
-
 This year, the rivers flood – and yet our flowers <br>
 will not reveal rivers. You said a man <br>
 who floods his skin with fists stands unabated.<br>

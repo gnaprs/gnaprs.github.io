@@ -13,7 +13,8 @@ comments: false
 
 
 
-<center><a href="http://gnaprs.github.io"><b>Marion Pang</b></a> is a biomedical engineer, interested in pursuing a PhD in the field of Computational Systems Biology and Medical Devices.</center> [(View CV)](/assets/img/231120_CV.pdf)
+<center><a href="http://gnaprs.github.io"><b>Marion Pang</b></a> is a biomedical engineer, interested in pursuing a PhD in the field of Computational Systems Biology and Medical Devices.</center>
+<div markdown="0"><a href="/assets/img/231120_CV.pdf" class="btn" title="Download CV as PDF">Download CV</a></div>
 
 ## Education
 Johns Hopkins University \\(\cdot\\) GPA: 3.95/4.0 \\(\cdot\\) Aug 2017-May 2020  

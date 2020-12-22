@@ -7,8 +7,6 @@ tags: [fiction, story]
 comments: false
 ---
 
-feature: some link
-
 > Well, this is awkward. This wasn’t in the manual. 
 
 You would think that for all the years we spent in Grim Station Vocational School, we would have learnt how to deal with this. But here a woman laid before me, her face contorted in pain. I mentally blocked out the distracting panting as I pondered my options. I took out my trusty handbook and flipped to Section 3.1: The reaper shall go about his duties in the most timely and efficient manner.
